@@ -1,0 +1,15 @@
+# Count how long files with certain keywords
+grep -c "ERROR" appication.long
+
+# Find log files that have been modified in the past 24 hours
+find . -name "*.log" -mtime -1
+
+For arrays,
+    [*] VS [@]
+    ${ERROR_PATTERNS[*]} -> Expands all element as one big string
+    ${ERROR_PATTERNS[@]} -> expands each elemtn as a seperate word
+
+
+'>' and '>>' are redirection operators used to send output to a file instead of displaying it on the terminal
+'>' overwrites the previous content every time the command is executed
+'>>' Appends every new output to existing file
